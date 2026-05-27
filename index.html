@@ -3,53 +3,71 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Meme generator</title>
+    <title>Meme Generator 2030</title>
     <link rel="stylesheet" href="style.css" />
-    
- <script src="script.js" defer></script>
-    
-<link rel="icon"
-      href="dogicon.png"/>
-   
+    <link rel="icon" href="dogicon.png" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
- 
-  <div id="contener">
-    
-     <h1>
-       <img src="doge.png" width="100">
-    Meme generator
-    </h1>
-    
-    
-    <div id="panel">
-      
-      <label id="picture-button">
-    <input type="file" id="select-picture"/>
-    Wybierz obrazek
-</label>
+    <div class="app-shell">
+      <header class="brand-bar">
+        <div class="brand-mark">
+          <img src="doge.png" alt="Doge" />
+        </div>
+        <div>
+          <p class="small-label">Meme Studio</p>
+          <h1>Generator memów 2030</h1>
+        </div>
+      </header>
 
- 
+      <main class="layout-grid">
+        <section class="panel glass-panel">
+          <div class="panel-head">
+            <p class="panel-tag">Wybierz swój obraz</p>
+            <h2>Stwórz mem w stylu przyszłości</h2>
+          </div>
 
-  <h3>
-    Górny pasek
-    </h3>
-  <input type="text" id="text-top" class="textbox">
+          <label id="picture-button" class="upload-card">
+            <input type="file" id="select-picture" accept="image/*" />
+            <span>Wybierz obrazek</span>
+          </label>
 
-  <h3>
-    Dolny Pasek
-    </h3>
-  <input type="text" id="text-bottom" class="textbox">
-    
-<button id="download-button">Pobierz</button>
+          <div class="field-group">
+            <label for="text-top">Górny pasek</label>
+            <input
+              type="text"
+              id="text-top"
+              class="textbox"
+              placeholder="Wpisz górny napis"
+            />
+          </div>
+
+          <div class="field-group">
+            <label for="text-bottom">Dolny pasek</label>
+            <input
+              type="text"
+              id="text-bottom"
+              class="textbox"
+              placeholder="Wpisz dolny napis"
+            />
+          </div>
+
+          <button id="download-button" class="primary-button">
+            Wygeneruj mama
+          </button>
+        </section>
+
+        <section class="preview-panel glass-panel">
+          <div class="preview-header">
+            <p class="panel-tag">Podgląd</p>
+            <span>Twój meme pojawi się tutaj</span>
+          </div>
+          <div class="canvas-frame">
+            <canvas id="meme"></canvas>
+          </div>
+        </section>
+      </main>
     </div>
-  
-  <canvas id="meme"></canvas>
-
-    </div>
-  
   </body>
-  <h2>Tekst</h2>
 </html>

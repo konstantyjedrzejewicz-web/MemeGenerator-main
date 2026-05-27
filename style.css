@@ -74,4 +74,21 @@ background-color: #f5af19;
   opacity:0.8;
 }
 
+/* Zaokrąglanie wszystkich przycisków */
+button,
+input[type="button"],
+input[type="submit"],
+#picture-button,
+#download-button,
+.btn {
+  border-radius: 12px;
+}
+
+/* Zaokrąglanie wszystkich elementów na stronie */
+*,
+*::before,
+*::after {
+  border-radius: 12px;
+}
+
 
